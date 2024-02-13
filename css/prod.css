@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.wrapper .content {
+    width: 250px;
+    height: 380px;
+    background-color: #fff;
+    /* background-color:#fe828c; */
+    padding: 40px 20px;
+    position: relative;
+    cursor: pointer;
+    border-bottom: 5px solid #178066;
+    border-right: 5px solid #178066;
+    border-radius: 10px;
+    margin: 15px;
+    margin-bottom: 25px;
+
+}
+
+.wrapper .content .price {
+    width: 60px;
+    height: 60px;
+    background-color: #178066;
+    display: flex;
+    border-radius: 50%;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -25px;
+    left: -25px;
+    opacity: 0;
+    transition: all 0.9s;
+}
+
+.wrapper .content:hover .price {
+    opacity: 1;
+}
+
+.wrapper .content .p-image {
+    text-align: center;
+}
+
+.wrapper .content .p-image img {
+    transition: all 0.5s;
+    
+    
+}
+.bg-image img{
+    height: 250px;
+}
+.wrapper .content:hover .p-image img {
+    transform: rotate(30deg);
+}
+
+.wrapper .content .line {
+    width: 30px;
+    height: 5px;
+    background-color: black;
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.wrapper .content h4 {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.wrapper .content button {
+
+    height: 45px;
+    width: 100px;
+    border: none;
+    background-color: #178066;
+    border-radius: 5px;
+    color: #fff;
+    position: absolute;
+    bottom: -20px;
+    right: 20px;
+    font-size: 15px;
+}
+
+.wrapper .content p {
+    font-size: 15px;
+}
+
+.wrapper .content button {
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+
+.wrapper .content:hover button {
+    opacity: 1;
+    transition: all 0.5s;
+}
+.p-image img{
+    height: 150px;
+    width: 150px;
+}
+

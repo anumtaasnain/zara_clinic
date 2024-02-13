@@ -1,0 +1,146 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+/* cardscss-start */
+.row .h1 ,h2{
+    text-align: center;
+    align-items: center;
+}
+.card {
+    position: relative;
+    width: 300px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    border-right: 4px solid  #178066;
+    border-bottom:4px solid  #178066;
+    margin-bottom: 7px;
+  }
+
+  .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: transform 0.3s ease;
+  }
+
+  .card .content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-sizing: border-box;
+    transition: opacity 0.3s ease;
+  }
+
+  .card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  .card:hover img {
+    transform: scale(1.1);
+  }
+
+  .card:hover .content {
+    opacity: 1;
+  }
+
+  h2 {
+    margin: 0;
+    font-size: 1.5em;
+  }
+
+  p {
+    margin: 10px 0 0;
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
+/* cardscss-end */
+/* nextpart-start */
+.container-fluid{
+    margin-top: 20px;
+}
+ h5{
+    color:   #178066;
+}
+h3{
+    margin-top: 20px;
+    margin-left: 35px;
+}
+ 
+ .p{
+    font-size: 20px;
+    margin-top: 20px;
+}
+.col,img{
+    height: 700px;
+    width: 100%;
+}
+ 
+/* footer_start */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #178066;
+    box-shadow: 3px 3px 20px 5px whitesmoke;
+    color:#f9f9f9;
+    height: auto;
+    padding: 50px;
+}
+
+.footer-box ul li {
+    list-style: none;
+}
+
+.footer-box ul li a {
+    text-decoration: none;
+    color: #f9f9f9;
+}
+
+.timings-box {
+    background-color: whitesmoke;
+    background-color:#29a082;
+    border-radius: 15px;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+
+/* Responsive design */
+@media screen and (max-width: 600px) {
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-box {
+        margin-bottom: 20px;
+    }
+}
+
+/* Footer_end */
+.dental_card{
+    margin: 10px;
+}
+/* services-start */
+    
